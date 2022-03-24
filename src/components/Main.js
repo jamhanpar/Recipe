@@ -4,7 +4,7 @@ const Main = () => {
   return (
     <div>
       <main class="px-16 py-6">
-        <div className="flex justify-end">
+        <div className="flex justify-center md:justify-end">
           <a href="#" className="text-red-400">Log in</a>
           <a href="#" className="text-red-400 ml-2">Sign up</a>
         </div>
