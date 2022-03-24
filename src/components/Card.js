@@ -2,7 +2,7 @@ import React from 'react';
 
 const Card = ({ imgSrc, name, chef, cookTime }) => {
   return (
-    <div className="card">
+    <div className="card hover:shadow-lg">
       <img
         src={imgSrc}
         alt="Chicken Tikka Masala"
