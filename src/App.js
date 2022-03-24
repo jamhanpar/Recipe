@@ -5,10 +5,9 @@ import Nav from './components/Nav';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App text-gray-500">
       <Nav />
       <Main />
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
     </div>
   );
 }

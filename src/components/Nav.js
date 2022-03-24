@@ -5,24 +5,24 @@ const Nav = () => {
     <div>
       <nav>
         <div>
-          <h1>
+          <h1 className="font-bold uppercase"> 
             <a href="/">Food Ninja</a>
           </h1>
         </div>
         <ul>
-          <li>
+          <li className="text-gray-700 font-bold">
             <a href="#">
-              <span>home</span>
+              <span>Home</span>
             </a>
           </li>
           <li>
             <a href="#">
-              <span>about</span>
+              <span>About</span>
             </a>
           </li>
           <li>
             <a href="#">
-              <span>contact</span>
+              <span>Contact</span>
             </a>
           </li>
         </ul>
