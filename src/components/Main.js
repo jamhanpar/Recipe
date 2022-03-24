@@ -6,8 +6,12 @@ const Main = () => {
     <div>
       <main class="px-16 py-6 bg-gray-100">
         <div className="flex justify-center md:justify-end">
-          <a href="#" className="text-red-400">Log in</a>
-          <a href="#" className="text-red-400 ml-2">Sign up</a>
+          <a href="#" className="text-red-400">
+            Log in
+          </a>
+          <a href="#" className="text-red-400 ml-2">
+            Sign up
+          </a>
         </div>
 
         <header>
@@ -16,13 +20,30 @@ const Main = () => {
         </header>
 
         <div>
-          <h4 className="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
+          <h4 className="font-bold mt-12 pb-2 border-b border-gray-200">
+            Latest Recipes
+          </h4>
           <div className="mt-8">
             {/* Cards go here */}
-            <Card />
+            <Card
+              imgSrc="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2019/9/3/0/FNK_the-best-chicken-tikka-masala_H_s4x3.jpg.rend.hgtvcom.616.462.suffix/1567523604572.jpeg"
+              name="Chicken Tikka Masala"
+              chef="Mario"
+              cookTime={25}
+            />
+            <Card imgSrc="https://norecipes.com/wp-content/uploads/2019/04/mentaiko-pasta-002.jpg" 
+            name="Mentaiko Pasta"
+            chef="James"
+            cookTime={10}/>
+            <Card imgSrc="https://mahatmarice.com/wp-content/uploads/2019/05/Shrimp-Fried-Rice-w-Pineapple-Egg-020.jpg" 
+            name="Shrimp Fried Rice"
+            chef="Jennifer"
+            cookTime={20}/>
           </div>
 
-          <h4 className="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
+          <h4 className="font-bold mt-12 pb-2 border-b border-gray-200">
+            Latest Recipes
+          </h4>
           <div className="mt-8">{/* Cards go here */}</div>
 
           <div className="flex justify-center">
