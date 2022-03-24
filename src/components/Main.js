@@ -3,7 +3,7 @@ import React from 'react';
 const Main = () => {
   return (
     <div>
-      <main>
+      <main class="px-16 py-6">
         <div>
           <a href="#">Log in</a>
           <a href="#">Sign up</a>
@@ -15,11 +15,14 @@ const Main = () => {
         </header>
 
         <div>
-          <h4 className="font-bold">Latest Recipes</h4>
-          <div>
+          <h4 className="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
+          <div className="mt-8">
             {/* Cards go here */}
             <div>
-              <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2019/9/3/0/FNK_the-best-chicken-tikka-masala_H_s4x3.jpg.rend.hgtvcom.616.462.suffix/1567523604572.jpeg" alt="Chicken Tikka Masala" />
+              <img
+                src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2019/9/3/0/FNK_the-best-chicken-tikka-masala_H_s4x3.jpg.rend.hgtvcom.616.462.suffix/1567523604572.jpeg"
+                alt="Chicken Tikka Masala"
+              />
               <div>
                 <span>Chicken Tikka Masala</span>
                 <span>Recipe by Mario</span>
@@ -27,11 +30,11 @@ const Main = () => {
             </div>
           </div>
 
-          <h4 className="font-bold">Latest Recipes</h4>
-          <div>{/* Cards go here */}</div>
+          <h4 className="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
+          <div className="mt-8">{/* Cards go here */}</div>
 
           <div>
-              <div>Load more</div>
+            <div>Load more</div>
           </div>
         </div>
       </main>
