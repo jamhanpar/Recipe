@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <Nav />
       <Main />
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
     </div>
   );
 }

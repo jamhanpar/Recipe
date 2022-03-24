@@ -19,9 +19,9 @@ const Main = () => {
           <div>
             {/* Cards go here */}
             <div>
-              <img src="" alt="Chicken Tikka Masala" />
+              <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2019/9/3/0/FNK_the-best-chicken-tikka-masala_H_s4x3.jpg.rend.hgtvcom.616.462.suffix/1567523604572.jpeg" alt="Chicken Tikka Masala" />
               <div>
-                <span>Chicken Tikka Masala</span>
+                <span className="text-yellow-400">Chicken Tikka Masala</span>
                 <span>Recipe by Mario</span>
               </div>
             </div>
