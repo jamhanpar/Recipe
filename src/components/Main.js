@@ -4,9 +4,9 @@ const Main = () => {
   return (
     <div>
       <main class="px-16 py-6">
-        <div>
-          <a href="#">Log in</a>
-          <a href="#">Sign up</a>
+        <div className="flex justify-end">
+          <a href="#" className="text-red-400">Log in</a>
+          <a href="#" className="text-red-400 ml-2">Sign up</a>
         </div>
 
         <header>
@@ -33,8 +33,8 @@ const Main = () => {
           <h4 className="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
           <div className="mt-8">{/* Cards go here */}</div>
 
-          <div>
-            <div>Load more</div>
+          <div className="flex justify-center">
+            <div className="bg-gray-200 text-gray-400">Load more</div>
           </div>
         </div>
       </main>
