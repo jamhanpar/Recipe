@@ -6,10 +6,16 @@ const Main = () => {
     <div className="md:col-span-2">
       <main class="px-16 py-6 bg-gray-100">
         <div className="flex justify-center md:justify-end">
-          <a href="#" className="btn text-red-400 border-red-400 md:border-2 hover:bg-red-400 hover:text-white">
+          <a
+            href="#"
+            className="btn text-red-400 border-red-400 md:border-2 hover:bg-red-400 hover:text-white transition ease-out duration-500"
+          >
             Log in
           </a>
-          <a href="#" className="btn text-red-400 ml-2 border-red-400 md:border-2 hover:bg-red-400 hover:text-white">
+          <a
+            href="#"
+            className="btn text-red-400 ml-2 border-red-400 md:border-2 hover:bg-red-400 hover:text-white transition ease-out duration-500"
+          >
             Sign up
           </a>
         </div>
@@ -51,7 +57,9 @@ const Main = () => {
           <div className="mt-8">{/* Cards go here */}</div>
 
           <div className="flex justify-center">
-            <div className="btn bg-gray-200 text-gray-400 hover:shadow-inner">Load more</div>
+            <div className="btn bg-gray-200 text-gray-400 hover:shadow-inner tranform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300">
+              Load more
+            </div>
           </div>
         </div>
       </main>
