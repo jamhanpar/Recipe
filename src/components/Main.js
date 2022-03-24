@@ -1,7 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const Main = (props) => {
+const Main = () => {
   return (
     <div>
       <main>
@@ -20,9 +19,9 @@ const Main = (props) => {
           <div>
             {/* Cards go here */}
             <div>
-              <img src="" alt="" />
+              <img src="" alt="Chicken Tikka Masala" />
               <div>
-                <span>5 Bean Chilli Stew</span>
+                <span>Chicken Tikka Masala</span>
                 <span>Recipe by Mario</span>
               </div>
             </div>
@@ -39,7 +38,5 @@ const Main = (props) => {
     </div>
   );
 };
-
-Main.propTypes = {};
 
 export default Main;

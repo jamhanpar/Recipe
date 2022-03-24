@@ -1,7 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const Nav = (props) => {
+const Nav = () => {
   return (
     <div>
       <nav>
@@ -31,7 +30,5 @@ const Nav = (props) => {
     </div>
   );
 };
-
-Nav.propTypes = {};
 
 export default Nav;
