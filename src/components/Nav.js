@@ -1,17 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Nav = () => {
+  const [menuToggle, setMenuToggle] = useState(true);
+
+  const onClick = () => {
+    setMenuToggle(!menuToggle);
+  };
+
   return (
     <div className="md:col-span-1 md:flex md:justify-end">
       <nav className="text-right">
-        <div>
+        <div className="flex justify-between items-center">
           <h1 className="font-bold uppercase p-4 border-b border-gray-100">
-            <a href="/" className="hover:text-gray-700">Food Ninja</a>
+            <a href="/" className="hover:text-gray-700">
+              Food Ninja
+            </a>
           </h1>
+          <div className="px-4 cursor-pointer md:hidden" onClick={onClick}>
+            <svg
+              class="w-6 h-6 "
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </div>
         </div>
-        <ul className="text-sm mt-6">
+        <ul className={`text-sm mt-6 ${menuToggle ? 'hidden' : ''} md:block`}>
           <li className="text-gray-700 font-bold py-1">
-            <a href="#" className="px-4 flex justify-end border-r-4 border-red-400">
+            <a
+              href="#"
+              className="px-4 flex justify-end border-r-4 border-red-400"
+            >
               <span>Home</span>
               <svg
                 class="w-5 h-5 ml-2"
@@ -30,7 +55,10 @@ const Nav = () => {
             </a>
           </li>
           <li className="py-1">
-            <a href="#" className="px-4 flex justify-end border-r-4 border-white">
+            <a
+              href="#"
+              className="px-4 flex justify-end border-r-4 border-white"
+            >
               <span>About</span>
               <svg
                 class="w-5 h-5 ml-2"
@@ -47,7 +75,10 @@ const Nav = () => {
             </a>
           </li>
           <li className="py-1">
-            <a href="#" className="px-4 flex justify-end border-r-4 border-white">
+            <a
+              href="#"
+              className="px-4 flex justify-end border-r-4 border-white"
+            >
               <span>Contact</span>
               <svg
                 class="w-5 h-5 ml-2"
