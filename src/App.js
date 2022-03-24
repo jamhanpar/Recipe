@@ -5,7 +5,7 @@ import Nav from './components/Nav';
 
 function App() {
   return (
-    <div className="App text-gray-500">
+    <div className="App text-gray-500 grid md:grid-cols-3">
       <Nav />
       <Main />
     </div>

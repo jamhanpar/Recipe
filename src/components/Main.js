@@ -3,7 +3,7 @@ import Card from './Card';
 
 const Main = () => {
   return (
-    <div>
+    <div className="col-span-2">
       <main class="px-16 py-6 bg-gray-100">
         <div className="flex justify-center md:justify-end">
           <a href="#" className="text-red-400">
@@ -23,7 +23,7 @@ const Main = () => {
           <h4 className="font-bold mt-12 pb-2 border-b border-gray-200">
             Latest Recipes
           </h4>
-          <div className="mt-8">
+          <div className="mt-8 grid lg:grid-cols-3 gap-10">
             {/* Cards go here */}
             <Card
               imgSrc="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2019/9/3/0/FNK_the-best-chicken-tikka-masala_H_s4x3.jpg.rend.hgtvcom.616.462.suffix/1567523604572.jpeg"
@@ -31,14 +31,18 @@ const Main = () => {
               chef="Mario"
               cookTime={25}
             />
-            <Card imgSrc="https://norecipes.com/wp-content/uploads/2019/04/mentaiko-pasta-002.jpg" 
-            name="Mentaiko Pasta"
-            chef="James"
-            cookTime={10}/>
-            <Card imgSrc="https://mahatmarice.com/wp-content/uploads/2019/05/Shrimp-Fried-Rice-w-Pineapple-Egg-020.jpg" 
-            name="Shrimp Fried Rice"
-            chef="Jennifer"
-            cookTime={20}/>
+            <Card
+              imgSrc="https://norecipes.com/wp-content/uploads/2019/04/mentaiko-pasta-002.jpg"
+              name="Mentaiko Pasta"
+              chef="James"
+              cookTime={10}
+            />
+            <Card
+              imgSrc="https://mahatmarice.com/wp-content/uploads/2019/05/Shrimp-Fried-Rice-w-Pineapple-Egg-020.jpg"
+              name="Shrimp Fried Rice"
+              chef="Jennifer"
+              cookTime={20}
+            />
           </div>
 
           <h4 className="font-bold mt-12 pb-2 border-b border-gray-200">
