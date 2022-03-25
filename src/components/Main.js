@@ -3,7 +3,7 @@ import Card from './Card';
 
 const Main = () => {
   return (
-    <div className="md:col-span-2">
+    <div className="md:col-span-5">
       <main class="px-16 py-6 bg-gray-100">
         <div className="flex justify-center md:justify-end">
           <a
